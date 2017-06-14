@@ -3,7 +3,7 @@
 
 	<title>SF-Game</title>
 	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="stylea.css" >
+	<link rel="stylesheet" type="text/css" href="style1.css" >
 	<meta name="viewport"content="width=device-width,initial-scale=1.0">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 	
@@ -53,7 +53,8 @@ function newBoard(){
 }
 function memoryFlipTile(tile,val){
 		turn+=1;
-		document.getElementById("turn").innerHTML = turn;
+		document.getElementById("turn").innerHTML = turn;
+
 	if(tile.innerHTML=="" && memory_values.length<2){
 		tile.style.background ="white";
 		tile.innerHTML=val;
@@ -244,7 +245,8 @@ font-size: 50px;color:#FF8C00">Score: <a id="score" style="font-size:40px">0</a>
 <div class= "g5">
 <img src="g5.gif">
 </div>
-</div>
+</div>
+
 <script>newBoard();</script>
 </body>
 </html>
