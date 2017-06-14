@@ -29,7 +29,7 @@ div#memory_board  >  div{
 	margin:5px;
 	padding:18px;
 	border-style:solid;
-	border-color:red;
+	border-color:magenta;
 	border-width: 2px 2px 2px 2px;
 	font-size:40px;
 	cursor:url(sword.jpg),auto;
@@ -304,23 +304,23 @@ font-family: 'Amatic SC', cursive;
 }
 .g1{
 	margin-top:-30px;
-	margin-left:-110px
+	margin-left:-120px
 }
 .g2{
 	margin-top:-141px;
-	margin-left:125px
+	margin-left:115px
 }
 .g3{
 	margin-top:-130px;
-	margin-left:375px
+	margin-left:365px
 }
 .g4{
 	margin-top:-118px;
-	margin-left:610px
+	margin-left:600px
 }
 .g5{
 	margin-top:-128px;
-	margin-left:850px
+	margin-left:840px
 }
 .g6{
 	margin-top:-125px;
