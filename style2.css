@@ -29,7 +29,7 @@ div#memory_board  >  div{
 	margin:5px;
 	padding:18px;
 	border-style:solid;
-	border-color:yellow;
+	border-color:#DAA520;
 	border-width: 2px 2px 2px 2px;
 	font-size:40px;
 	cursor:url(sword.jpg),auto;
@@ -92,70 +92,70 @@ font-family: 'Amatic SC', cursive;
 
 }
 .b1{	
-	margin-top:-19px;
+	margin-top:-18px;
 	margin-left:30px;
 
 }
 .b2{	
-	margin-top:-19px;
+	margin-top:-18px;
 	margin-left:130px;
 
 }
 .b3{	
-	margin-top:-19px;
+	margin-top:-18px;
 	margin-left:230px;
 
 }
 
 .b4{	
-	margin-top:-19px;
+	margin-top:-18px;
 	margin-left:330px;
 
 }
 
 .b5{	
-	margin-top:-19px;
+	margin-top:-18px;
 	margin-left:430px;
 
 }
 
 .b6{	
-	margin-top:-19px;
+	margin-top:-18px;
 	margin-left:530px;
 
 }
 
 .b7{	
-	margin-top:-19px;
+	margin-top:-18px;
 	margin-left:630px;
 
 }
 
 .b8{	
-	margin-top:-19px;
+	margin-top:-18px;
 	margin-left:730px;
 
 }
 .b9{	
-	margin-top:-19px;
+	margin-top:-18px;
 	margin-left:830px;
 
 }
 .b10{	
-	margin-top:-19px;
+	margin-top:-18px;
 	margin-left:930px;
 
 }
 
 
 .b11{	
-	margin-top:-19px;
+	margin-top:-18px;
 	margin-left:1030px;
 
 }
 
 .d12{	
-	margin-top:-19px;
+	margin-top:-18px;
 	margin-left:1130px;
 
 }
@@ -289,12 +289,12 @@ font-family: 'Amatic SC', cursive;
 	margin-bottom:-250px;
 }
 .b29{	
-	margin-top:102px;
+	margin-top:101px;
 	margin-left:1550px;
 	margin-bottom:-250px;
 }
 .b30{	
-	margin-top:102px;
+	margin-top:101px;
 	margin-left:1650px;
 	margin-bottom:-250px;
 }
