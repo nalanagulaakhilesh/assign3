@@ -16,8 +16,11 @@ div#memory_board{
 		position:absolute;
 		top:250px;
 		left:100px;
-		cursor:url('sword.jpg');
-		
+		cursor:pointer,auto;
+		border-style:solid;
+		border-width: 2px 2px 2px 2px;
+		border-color:#820000;
+		box-shadow: 5px 5px 5px 5px #ff9900;
 		border: none;
 		padding:20px;
 }
@@ -32,7 +35,7 @@ div#memory_board  >  div{
 	border-color:magenta;
 	border-width: 2px 2px 2px 2px;
 	font-size:40px;
-	cursor:url(sword.jpg),auto;
+	cursor:url(smiley.gif),url(myBall.cur),auto;
 	text-align:center;
 }
 .mar{
