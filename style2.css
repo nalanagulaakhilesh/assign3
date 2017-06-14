@@ -1,5 +1,5 @@
 body{
-		background:url(back5.jpg); 
+		background:url(back6.jpg); 
 		background-position:top;
 		
 		overflow-x:hidden;
@@ -21,7 +21,7 @@ div#memory_board{
 		padding:20px;
 }
 div#memory_board  >  div{
-	background:url(bird2.jpg) no-repeat;
+	background:url(bird3.jpg) no-repeat;
 	width:60px;
 	height:45px;
 	float:left;
