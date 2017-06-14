@@ -18,9 +18,9 @@ div#memory_board{
 		left:100px;
 		cursor:pointer,auto;
 		border-style:solid;
-		border-width: 2px 2px 2px 2px;
+		border-width: 4px 2px 2px 4px;
 		border-color:#820000;
-		box-shadow: 5px 5px 5px 5px #ff9900;
+		box-shadow: 3px 3px 3px 3px #ff9900;
 		border: none;
 		padding:20px;
 }
@@ -32,7 +32,7 @@ div#memory_board  >  div{
 	margin:5px;
 	padding:18px;
 	border-style:solid;
-	border-color:magenta;
+	border-color:#ff9900;
 	border-width: 2px 2px 2px 2px;
 	font-size:40px;
 	cursor:url(smiley.gif),url(myBall.cur),auto;
