@@ -29,7 +29,7 @@ div#memory_board  >  div{
 	margin:5px;
 	padding:18px;
 	border-style:solid;
-	border-color:green;
+	border-color:magenta;
 	border-width: 2px 2px 2px 2px;
 	font-size:40px;
 	cursor:url(sword.jpg),auto;
@@ -324,5 +324,5 @@ font-family: 'Amatic SC', cursive;
 }
 .g6{
 	margin-top:-125px;
-	margin-left:1040px
+	margin-left:1050px
 }
