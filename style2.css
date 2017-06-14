@@ -27,7 +27,10 @@ div#memory_board  >  div{
 	height:45px;
 	float:left;
 	margin:5px;
-	padding:25px;
+	padding:18px;
+	border-style:solid;
+	border-color:black;
+	border-width: 2px 2px 2px 2px;
 	font-size:40px;
 	cursor:url(sword.jpg),auto;
 	text-align:center;
