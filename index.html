@@ -1,0 +1,253 @@
+<!doctype html>
+<head>
+
+	<title>SF-Game</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="stylea.css" >
+	<meta name="viewport"content="width=device-width,initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	
+<style>
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Merriweather|Open+Sans|Oswald|Special+Elite');
+</style>
+<style type="text/css">	
+.bo{
+	border-image-source: url(border.jpg);
+	border-image-repeat: repeat-y;
+		
+}
+	
+</style>
+
+<script>
+
+var memory_array=['A','A','B','B','C','C','D','D','E','E','F','F','G','G','H','H'];
+var memory_values=[];
+var tiles_flipped=0;
+var memory_tile_ids=[];
+var turn=0;
+var score=0;
+Array.prototype.memory_tile_shuffle=function(){
+	var i=this.length,j,temp;
+	while(--i>0){
+	j=Math.floor(Math.random()*(i+1));
+	temp=this[j];
+	this[j]=this[i];
+	this[i]=temp;
+	
+       }
+}
+
+function newBoard(){
+	tiles_flipped=0;
+	score=0;
+	turn=0;
+	document.getElementById("turn").innerHTML = turn;
+	document.getElementById("score").innerHTML = score;
+	var output="";
+	memory_array.memory_tile_shuffle();
+	for(var i=0;i<memory_array.length;i++){
+		output += '<div id="tile_'+i+'" onclick="memoryFlipTile(this,\' '+memory_array[i]+'\')"></div>';
+	}
+	document.getElementById('memory_board').innerHTML = output;
+}
+function memoryFlipTile(tile,val){
+		turn+=1;
+		document.getElementById("turn").innerHTML = turn;
+	if(tile.innerHTML=="" && memory_values.length<2){
+		tile.style.background ="white";
+		tile.innerHTML=val;
+		if(memory_values.length==0){
+			memory_values.push(val);
+			memory_tile_ids.push(tile.id);
+		}  else if(memory_values.length ==1){
+			memory_values.push(val);
+			memory_tile_ids.push(tile.id);
+			if(memory_values[0]==memory_values[1]){
+				tiles_flipped +=2;
+				score+=2;
+				document.getElementById("score").innerHTML = score;
+				memory_values=[];
+				memory_tile_ids=[];
+				if(tiles_flipped == memory_array.length){
+					alert("Board cleared...generating new board");
+					document.getElementById('memory_board').innerHTML = "";
+					score=0;
+					turn=0;
+					document.getElementById("score").innerHTML = score;
+					document.getElementById("turn").innerHTML = turn;
+					newBoard();
+				}
+			}else {
+				function flip2Back(){
+					var tile_1=document.getElementById(memory_tile_ids[0]);
+					var tile_2=document.getElementById(memory_tile_ids[1]);
+					tile_1.style.background='url(bird.jpg)  no-repeat';
+					tile_1.innerHTML="";					
+					tile_2.innerHTML="";
+					tile_2.style.background= 'url(bird.jpg) no-repeat';
+					memory_values=[];
+					memory_tile_ids=[];
+				
+				}
+				setTimeout (flip2Back,700);
+			         }
+			}
+}
+}
+		
+
+</script>
+</head>
+
+<body class="mar">
+
+
+<div class="bord">
+<img src ="border.jpg" style="background-repeat:repeat-y; width:100px;"/>
+</div>
+
+<div class="bord1">
+<img src ="border.jpg" style="background-repeat:repeat-y; width:100px;"/>
+</div>
+
+
+<div class="b">
+<img src ="borderd.jpg" style="background-repeat:repeat-x; width:100px;"/>
+</div>
+
+<div class="b1">
+<img src ="borderd.jpg" style="background-repeat:repeat-x; width:100px;"/>
+</div>
+
+<div class="b2">
+<img src ="borderd.jpg" style="background-repeat:repeat-x; width:100px;"/>
+</div>
+
+<div class="b3">
+<img src ="borderd.jpg" style="background-repeat:repeat-x; width:100px;"/>
+</div>
+
+<div class="b4">
+<img src ="borderd.jpg" style="background-repeat:repeat-x; width:100px;"/>
+</div>
+
+
+<div class="b5">
+<img src ="borderd.jpg" style="background-repeat:repeat-x; width:100px;"/>
+</div>
+
+<div class="b6">
+<img src ="borderd.jpg" style="background-repeat:repeat-x; width:100px;"/>
+</div>
+
+<div class="b7">
+<img src ="borderd.jpg" style="background-repeat:repeat-x; width:100px;"/>
+</div>
+
+<div class="b8">
+<img src ="borderd.jpg" style="background-repeat:repeat-x; width:100px;"/>
+</div>
+<div class="b9">
+<img src ="borderd.jpg" style="background-repeat:repeat-x; width:100px;"/>
+</div>
+<div class="b10">
+<img src ="borderd.jpg" style="background-repeat:repeat-x; width:100px;"/>
+</div>
+
+<div class="b11">
+<img src ="borderd.jpg" style="background-repeat:repeat-x; width:100px;"/>
+</div>
+
+<div class="b12">
+<img src ="border2.jpg" style="background-repeat:repeat-x; width:100px;"/>
+</div>
+
+<div class="b13">
+<img src ="border2.jpg" style="background-repeat:repeat-x; width:100px;"/>
+</div>
+<div class="b14">
+<img src ="border2.jpg" style="background-repeat:repeat-x; width:100px;"/>
+</div>
+<div class="b15">
+<img src ="border2.jpg" style="background-repeat:repeat-x; width:100px;"/>
+</div>
+<div class="b16">
+<img src ="border2.jpg" style="background-repeat:repeat-x; width:100px;"/>
+</div>
+<div class="b17">
+<img src ="border2.jpg" style="background-repeat:repeat-x; width:100px;"/>
+</div>
+<div class="b18">
+<img src ="border2.jpg" style="background-repeat:repeat-x; width:100px;"/>
+</div>
+<div class="b19">
+<img src ="border2.jpg" style="background-repeat:repeat-x; width:100px;"/>
+</div>
+<div class="b20">
+<img src ="border2.jpg" style="background-repeat:repeat-x; width:100px;"/>
+</div>
+<div class="b21">
+<img src ="border2.jpg" style="background-repeat:repeat-x; width:100px;"/>
+</div>
+<div class="b22">
+<img src ="border2.jpg" style="background-repeat:repeat-x; width:100px;"/>
+</div>
+<div class="b23">
+<img src ="border2.jpg" style="background-repeat:repeat-x; width:100px;"/>
+</div>
+<div class="b24">
+<img src ="border2.jpg" style="background-repeat:repeat-x; width:100px;"/>
+</div>
+<div class="b25">
+<img src ="border2.jpg" style="background-repeat:repeat-x; width:100px;"/>
+</div>
+
+
+<div id="memory_board"></div>
+<div class="cl">
+<div class="fnt">
+<div class="attem">
+<p class="attem" style="font-family: 'Open Sans', sans-serif;
+font-family: 'Oswald', sans-serif;
+font-family: 'Merriweather', serif;
+font-family: 'Special Elite', cursive;
+font-family: 'Amatic SC', cursive;
+font-size: 50px;color:#FF8C00;">Attempts: <a id="turn" style="font-size:40px">START</a></p>
+</div>
+</div>
+
+
+<div class="sco">
+<div class="attem">
+<p class="attem" style="font-family: 'Open Sans', sans-serif;
+font-family: 'Oswald', sans-serif;
+font-family: 'Merriweather', serif;
+font-family: 'Special Elite', cursive;
+font-family: 'Amatic SC', cursive;
+font-size: 50px;color:#FF8C00">Score: <a id="score" style="font-size:40px">0</a></p>
+</div>
+</div>
+</div>
+<div class= "g1">
+<img src="g1.gif">
+</div>
+<div class= "g2">
+<img src="g2.gif">
+</div>
+<div class= "g3">
+<img src="g3.gif">
+</div>
+<div class= "g4">
+<img src="g4.gif">
+</div>
+<div class= "g5">
+<img src="g5.gif">
+</div>
+</div>
+<script>newBoard();</script>
+</body>
+</html>
+
+
+	
